@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
 builder.WebHost.UseUrls($"http://0.0.0.0:{port}");
 
-Console.WriteLine("Connection String: " + builder.Configuration.GetConnectionString("DefaultConnection"));
+Console.WriteLine("Magitech API iniciada - Neon DB conectado");
 
 // Adicionar serviços
 builder.Services.AddControllers();
